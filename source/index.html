@@ -12,10 +12,11 @@
     <title>Sedona | Главная</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav class="page-header__nav">
+    <header class="page-header">
+      <nav class="page-header__nav  nav  nav--closed  nav--nojs">
         <button class="nav__toggle  btn" type="button">Меню</button>
         <ul class="nav__list">
           <li class="nav__item  nav__item--active"><a>Главная</a></li>
@@ -23,20 +24,19 @@
           <li class="nav__item"><a href="form.html">Форма отзыва</a></li>
           <li class="nav__item"><a href="https://htmlacademy.ru" target="blank_">HTML Academy</a></li>
         </ul>
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+          </picture>
+        </a>
       </nav>
 
-      <a href="#" class="page-header__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" />
-          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" />
-          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona" />
-        </picture>
-      </a>
-
-      <section class="page-header__welcome">
+      <section class="page-header__welcome  welcome">
         <h1 class="visually-hidden">Sedona</h1>
         <img class="welcome__content" src="img/text-sedona-index.svg" width="282" height="214"
-             alt="Welcome to the gorgeous Sedona" />
+             alt="Welcome to the gorgeous Sedona">
       </section>
     </header>
 
